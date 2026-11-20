@@ -2,7 +2,15 @@ KALU · VISTA PREVIA LOCAL
 
 Abre index.html en Chrome, Edge u otro navegador. No requiere instalar Node.js ni MongoDB.
 
-Puedes recorrer la portada y pulsar «Acceso del personal» para entrar en un panel de muestra. Elige adminkalu para ver todas las secciones o ventaskalu para ver pedidos, ventas y caja. No se necesita contraseña en esta demostración. Los formularios no guardan datos reales.
+Puedes recorrer la portada y pulsar «Acceso del personal» para entrar en un panel de muestra. Elige adminkalu o ventaskalu; ambos muestran el mismo menú lateral. No se necesita contraseña en esta demostración. Los cambios duran solo mientras la página permanece abierta; todavía no hay conexión al servidor.
+
+Nuevo Pedido aparece en una sola pantalla. A la izquierda se agregan productos; a la derecha hay una boleta de muestra con total, cliente opcional, pago, forma de entrega y botones para confirmar o anular. Fiado solo aparece tras elegir un cliente registrado. Si el pedido supera el crédito disponible, la boleta propone cobrar la diferencia en efectivo y pide marcar su confirmación. Con cupo agotado, Fiado deja de estar disponible. Los pedidos confirmados se conservan solo mientras la página permanece abierta.
+
+En Pedidos se muestran solo tarjetas uniformes, sin el formulario de Nuevo Pedido. Cada tarjeta tiene lista de verificación, total, estado, hora de inicio y tiempo transcurrido. En Pendiente y Preparando se pueden marcar productos terminados. Al pasar a Entregado, todos aparecen marcados en gris y sin tachado.
+
+Ventas muestra solo el historial de compras del turno desde la apertura de caja. Cada pedido confirmado se agrega a ese historial. El resumen superior separa montos recibidos en tarjeta y efectivo, muestra el fiado pendiente de todos los clientes y conserva el monto estimado en caja. En un pago mixto, solo la parte cobrada en efectivo se suma a Efectivo y a Caja estimada; la parte fiada se suma a la deuda del cliente. Los abonos a una deuda se registran aparte de las ventas para evitar contarlos como una compra nueva. Si el abono es en efectivo, aumenta Efectivo y Caja estimada; si es con tarjeta, aumenta Tarjeta.
+
+En Clientes puedes crear un registro con nombre y apellido. Cada cliente recibe un número correlativo visible. El lápiz permite modificar sus datos y la X eliminarlo; no se permite borrar a alguien con deuda o compras vinculadas. Detalles abre el historial de compras y abonos con fechas, montos, total fiado, total abonado y deuda actual. Desde ese detalle puedes registrar un abono en efectivo, tarjeta o transferencia, por un monto no superior a la deuda. El abono queda fechado y libera cupo de crédito. El límite de crédito es opcional: al activarlo, puedes indicar el monto máximo. Si un pedido supera el cupo, al pulsar Confirmar pedido aparece una advertencia para modificar la compra o pagar la diferencia en efectivo. Nunca se carga al crédito más del cupo restante. Si el límite queda desactivado, el cliente puede tener fiado sin tope configurado por ahora. Las reglas de crédito se detallarán después.
 
 El logo ampliado está en assets/kalu-logo.png. Se conserva la imagen adjunta original en assets/kalu-logo-original.png para comparar detalles. El logo ampliado sigue siendo una imagen PNG, no un archivo vectorial editable.
 
