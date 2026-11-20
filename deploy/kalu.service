@@ -1,0 +1,22 @@
+[Unit]
+Description=Kalu Comida Rapida
+After=network-online.target mongod.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=kalu
+Group=kalu
+WorkingDirectory=/opt/kalu
+EnvironmentFile=/etc/kalu/kalu.env
+ExecStart=/usr/bin/node /opt/kalu/server.js
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/tmp
+
+[Install]
+WantedBy=multi-user.target
