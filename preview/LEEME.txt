@@ -1,0 +1,9 @@
+KALU · VISTA PREVIA LOCAL
+
+Abre index.html en Chrome, Edge u otro navegador. No requiere instalar Node.js ni MongoDB.
+
+Puedes recorrer la portada y pulsar «Acceso del personal» para entrar en un panel de muestra. Elige adminkalu para ver todas las secciones o ventaskalu para ver pedidos, ventas y caja. No se necesita contraseña en esta demostración. Los formularios no guardan datos reales.
+
+El logo ampliado está en assets/kalu-logo.png. Se conserva la imagen adjunta original en assets/kalu-logo-original.png para comparar detalles. El logo ampliado sigue siendo una imagen PNG, no un archivo vectorial editable.
+
+El menú, los precios y las fotos de productos reales deben confirmarse antes de publicar el sitio.
